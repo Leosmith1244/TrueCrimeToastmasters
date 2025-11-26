@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | True Crime Toastmasters</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="crime-tape"></div>
+    <header>
+        <nav>
+            <div class="logo">TRUE CRIME TOASTMASTERS</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="meetings.html">Meetings</a></li>
+                <li><a href="case-files.html">Case Files</a></li>
+                <li><a href="join.html" style="color:var(--tm-yellow);">Join Now</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h1 style="color: var(--tm-maroon);">BECOME A CHARTER MEMBER</h1>
+        <p style="font-size: 1.2rem;">Be one of the first 20. Your name goes on the official charter forever.</p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 40px;">
+            <div style="flex: 1; min-width: 300px;">
+                <h2>Member Benefits</h2>
+                <ul style="list-style: square; margin-left: 20px; line-height: 2;">
+                    <li><strong>Legacy:</strong> Official "Charter Member" designation from Toastmasters International.</li>
+                    <li><strong>Influence:</strong> Help vote on the club constitution, bylaws, and future meeting formats.</li>
+                    <li><strong>Leadership:</strong> Officer roles are open immediately (President Jennifer is seeking her cabinet).</li>
+                    <li><strong>Community:</strong> Connect with true crime enthusiasts locally in St. Paul and globally.</li>
+                </ul>
+            </div>
+
+            <div style="flex: 1; min-width: 300px; background: #1a1a1a; padding: 30px; border: 1px solid #444;">
+                <h2 style="border:none;">Membership Application</h2>
+                <form name="join" method="POST" data-netlify="true">
+                    <label>Full Name (for Charter)</label>
+                    <input type="text" name="name" required placeholder="Jane Doe">
+
+                    <label>Email Address</label>
+                    <input type="email" name="email" required placeholder="jane@example.com">
+
+                    <label>Favorite True Crime Case or Podcast?</label>
+                    <input type="text" name="interest">
+
+                    <label>How will you attend?</label>
+                    <select name="attendance">
+                        <option value="In-Person">In-Person (Saint Paul)</option>
+                        <option value="Online">Online (Zoom)</option>
+                        <option value="Both">Hybrid / Both</option>
+                    </select>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">SUBMIT APPLICATION</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="crime-tape"></div>
+    <footer>
+        <p><strong>True Crime Toastmasters Club</strong> • St. Paul, MN • Founded by Jennifer</p>
+        <p>© 2025</p>
+    </footer>
+</body>
+</html>

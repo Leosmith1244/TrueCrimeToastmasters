@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | True Crime Toastmasters</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Gallery Specific Styles */
+        .evidence-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .evidence-item {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .evidence-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.7);
+        }
+
+        .evidence-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--tm-yellow); /* Caution tape accent */
+        }
+
+        .evidence-details {
+            padding: 15px;
+        }
+
+        .evidence-details h3 {
+            font-family: var(--font-head);
+            color: var(--tm-yellow);
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+
+        .evidence-details p {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        /* Overlay for future interactive elements (e.g., lightbox) */
+        .evidence-item::after {
+            content: "VIEW EVIDENCE";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(139, 0, 0, 0.7); /* Blood red overlay */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: var(--font-head);
+            font-size: 1.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none; /* Allows hover on parent */
+        }
+
+        .evidence-item:hover::after {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="crime-tape"></div>
+    <header>
+        <nav>
+            <div class="logo">TRUE CRIME TOASTMASTERS</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="meetings.html">Meetings</a></li>
+                <li><a href="case-files.html">Case Files</a></li>
+                <li><a href="join.html" style="color:var(--tm-yellow);">Join Now</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h1>The Evidence Locker</h1>
+        <p>A visual archive of our investigations, successful closing arguments, and club milestones.</p>
+        <p style="font-style: italic; color: #aaa; margin-top: 10px;">(This gallery will grow as the club forms and holds meetings!)</p>
+        
+        <div class="evidence-grid">
+            <div class="evidence-item">
+                <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=1080&q=80" alt="Club Meeting Setup">
+                <div class="evidence-details">
+                    <h3>Exhibit A: Inaugural Gathering</h3>
+                    <p>The very first meeting of True Crime Toastmasters. Gavel ready, a new era begins.</p>
+                </div>
+            </div>
+
+            <div class="evidence-item">
+                <img src="https://images.unsplash.com/photo-1596541223940-10901e97d19a?auto=format&fit=crop&w=1080&q=80" alt="Founder Jennifer - professional portrait">
+                <div class="evidence-details">
+                    <h3>Exhibit B: Founder's Vision</h3>
+                    <p>Jennifer, Club President and Founder, ready to lead the investigation.</p>
+                </div>
+            </div>
+
+            <div class="evidence-item">
+                <img src="https://images.unsplash.com/photo-1522071820081-004f0151c69c?auto=format&fit=crop&w=1080&q=80" alt="Official Document">
+                <div class="evidence-details">
+                    <h3>Exhibit C: The Official Charter</h3>
+                    <p>The signed charter document, bearing the names of our founding members. Your legacy awaits.</p>
+                </div>
+            </div>
+
+            <div class="evidence-item">
+                <img src="https://images.unsplash.com/photo-1628155903908-b196144e135f?auto=format&fit=crop&w=1080&q=80" alt="Online Meeting Screenshot">
+                <div class="evidence-details">
+                    <h3>Exhibit D: Global Connection</h3>
+                    <p>Screenshot from a virtual meeting, connecting detectives worldwide.</p>
+                </div>
+            </div>
+
+            </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <p style="font-style: italic; color: #888;">"Every picture tells a story. What evidence will you contribute?"</p>
+            <a href="join.html" class="btn btn-primary" style="margin-top: 20px;">Join the Investigation & Be Photographed</a>
+        </div>
+    </section>
+
+    <div class="crime-tape"></div>
+    <footer>
+        <p><strong>True Crime Toastmasters Club</strong> • St. Paul, MN • Founded by Jennifer</p>
+        <p>© 2026</p>
+    </footer>
+</body>
+</html>
