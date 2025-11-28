@@ -40,27 +40,38 @@
             </div>
 
             <div style="flex: 1; min-width: 300px; background: #1a1a1a; padding: 30px; border: 1px solid #444;">
-                <h2 style="border:none;">Membership Application</h2>
-                <form name="join" method="POST" data-netlify="true">
-                    <label>Full Name (for Charter)</label>
-                    <input type="text" name="name" required placeholder="Jane Doe">
+    <h2 style="border:none;">Membership Application</h2>
+    
+    <form name="join" method="POST" data-netlify="true" action="/success.html" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="join">
+        <input type="hidden" name="bot-field">
 
-                    <label>Email Address</label>
-                    <input type="email" name="email" required placeholder="jane@example.com">
+        <label>Full Name (for Charter)</label>
+        <input type="text" name="name" required placeholder="Jane Doe">
 
-                    <label>Favorite True Crime Case or Podcast?</label>
-                    <input type="text" name="interest">
+        <label>Email Address</label>
+        <input type="email" name="email" required placeholder="jane@example.com">
 
-                    <label>How will you attend?</label>
-                    <select name="attendance">
-                        <option value="In-Person">In-Person (Saint Paul)</option>
-                        <option value="Online">Online (Zoom)</option>
-                        <option value="Both">Hybrid / Both</option>
-                    </select>
+        <label>Favorite True Crime Case or Podcast?</label>
+        <input type="text" name="interest">
 
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">SUBMIT APPLICATION</button>
-                </form>
-            </div>
+        <label>Can you commit to the First Friday of the month, 6:00 PM CT?</label>
+        <select name="time_commitment" required>
+            <option value="">-- Select --</option>
+            <option value="Yes_Available">Yes, I am available at this time.</option>
+            <option value="No_Conflict">No, I have a conflict at that time.</option>
+        </select>
+        
+        <label>How will you attend?</label>
+        <select name="attendance">
+            <option value="In-Person">In-Person (Saint Paul)</option>
+            <option value="Online">Online (Zoom)</option>
+            <option value="Both">Hybrid / Both</option>
+        </select>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">SUBMIT APPLICATION</button>
+    </form>
+</div>
         </div>
     </section>
 
