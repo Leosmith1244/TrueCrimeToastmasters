@@ -9,7 +9,7 @@
 <body>
 
     <div class="charter-alert">
-        NOW FORMING – SEEKING 20 CHARTER MEMBERS BY JAN 2026!
+        🗂️ CASE FILE OPENED — JOIN THE INVESTIGATION IN FEBRUARY
     </div>
 
     <div class="crime-tape"></div>
@@ -58,9 +58,27 @@
             </div>
 
             <div id="countdown">Loading Timeline...</div>
+        
+        </section>
+
+        <section class="container" style="margin-top: -10px;">
+            <div style="background: #1a1a1a; border: 1px solid #333; border-left: 4px solid var(--tm-yellow); padding: 22px; max-width: 900px; margin: 0 auto;">
+                <h2 style="margin-top: 0; border: none; color: var(--tm-yellow); text-transform: uppercase; letter-spacing: 1px;">Previously on True Crime Toastmasters…</h2>
+                <p style="margin-bottom: 10px;">
+                    Our inaugural January meeting laid the groundwork: compelling cases, sharp evaluations, and a room full of curious minds.
+                </p>
+                <p style="margin: 0 0 18px 0; color: #ddd;">
+                    The verdict? This club is different — and it’s just getting started.
+                </p>
+                <div style="display:flex; gap: 12px; flex-wrap: wrap;">
+                    <a href="case-files.html" class="btn btn-primary">Read Case File #001</a>
+                    <a href="meetings.html" class="btn">View February Docket</a>
+                </div>
+            </div>
         </section>
 
         <section class="container">
+
             <h2 style="text-align:center;">Why Join the Lineup?</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 30px;">
                 <div style="background: #1a1a1a; padding: 20px; border-left: 4px solid var(--tm-yellow);">
@@ -90,7 +108,7 @@
 
     <script>
         // UPDATED COUNTDOWN: Jan 2, 2026 18:00:00 CST
-        const countDate = new Date('Jan 2, 2026 18:00:00').getTime();
+        const countDate = new Date('Feb 6, 2026 18:00:00').getTime();
 
         const timer = setInterval(function() {
             const now = new Date().getTime();
@@ -101,11 +119,11 @@
             const minutes = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
 
             document.getElementById('countdown').innerText = 
-                "CASE OPENS IN: " + days + "d " + hours + "h " + minutes + "m ";
+                "NEXT HEARING BEGINS IN: " + days + "d " + hours + "h " + minutes + "m ";
 
             if (gap < 0) {
                 clearInterval(timer);
-                document.getElementById('countdown').innerText = "CASE IS OPEN - MEETING IN SESSION";
+                document.getElementById('countdown').innerText = "HEARING IN SESSION — CASE IS OPEN";
             }
         }, 1000);
     </script>
