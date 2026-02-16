@@ -392,3 +392,11 @@ input:focus, select:focus, textarea:focus {
     flex-wrap: wrap;
   }
 }
+.tm-logo {
+    max-height: 60px;
+    width: auto;
+    height: auto;
+}
+.footer .tm-logo {
+    max-height: 40px;
+}
