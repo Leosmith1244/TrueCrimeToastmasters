@@ -1,175 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | True Crime Toastmasters</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        /* Gallery Specific Styles */
-        .evidence-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .evidence-item {
-            background-color: #1a1a1a;
-            border: 1px solid #333;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .evidence-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.7);
-        }
-
-        .evidence-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-bottom: 3px solid var(--tm-yellow); /* Caution tape accent */
-        }
-
-        .evidence-details {
-            padding: 15px;
-        }
-
-        .evidence-details h3 {
-            font-family: var(--font-head);
-            color: var(--tm-yellow);
-            margin-bottom: 8px;
-            font-size: 1.2rem;
-        }
-
-        .evidence-details p {
-            font-size: 0.9rem;
-            color: #ccc;
-        }
-
-        /* Overlay for future interactive elements (e.g., lightbox) */
-        .evidence-item::after {
-            content: "VIEW EVIDENCE";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(139, 0, 0, 0.7); /* Blood red overlay */
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: var(--font-head);
-            font-size: 1.5rem;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            pointer-events: none; /* Allows hover on parent */
-        }
-
-        .evidence-item:hover::after {
-            opacity: 1;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery | True Crime Toastmasters</title>
+  <meta name="description" content="Gallery placeholders for True Crime Toastmasters—people-centered, brand-safe imagery until club photos are available." />
+  <meta name="keywords" content="Toastmasters, public speaking Minneapolis, communication skills, leadership development, hybrid Toastmasters, Pathways" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Gallery | True Crime Toastmasters" />
+  <meta property="og:description" content="Gallery placeholders for True Crime Toastmasters—people-centered, brand-safe imagery until club photos are available." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="crime-tape"></div>
-    <header>
-        <nav>
-            <div class="logo">TRUE CRIME TOASTMASTERS</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="meetings.html">Meetings</a></li>
-                <li><a href="case-files.html">Case Files</a></li>
-                <li><a href="join.html" style="color:var(--tm-yellow);">Join Now</a></li>
-                <li><a href="gallery.html" class="active">Gallery</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <section class="container">
-        <h1>The Evidence Locker</h1>
-        <p>A visual archive of our investigations, successful closing arguments, and club milestones.</p>
-        <p style="font-style: italic; color: #aaa; margin-top: 10px;">(This gallery will grow as the club forms and holds meetings!)</p>
-        
-        <div class="evidence-grid">
-            <div class="evidence-item">
-                <img src="images/TCD.jpg" alt="True Crime Toastmasters Club Meeting">
-                <div class="evidence-details">
-                    <h3>Exhibit A: Inaugural Gathering</h3>
-                    <p>January 2026 — the first case is argued, the gavel falls, and True Crime Toastmasters officially begins.</p>
-                </div>
-            </div>
+  <header class="site-header" role="banner">
+    <div class="wrap header__inner">
+      <a class="brand" href="index.html" aria-label="True Crime Toastmasters home">
+        <img class="brand__logo" src="https://www.toastmasters.org/-/media/images/logos/toastmasters-logo-full-color.png" alt="Toastmasters International logo" width="220" height="60" loading="eager" />
+        <span class="brand__club">True Crime Toastmasters</span>
+        <span class="brand__tag">Minneapolis • Hybrid</span>
+      </a>
 
-            <div class="evidence-item">
-                <img src="images/Jennifer.jpg" alt="Founder Jennifer - professional portrait">
-                <div class="evidence-details">
-                    <h3>Exhibit B: Founder's Vision</h3>
-                    <p>Jennifer, Club President and Founder, ready to lead the investigation.</p>
-                </div>
-            </div>
+      <button class="nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span aria-hidden="true">Menu</span>
+      </button>
 
-            <div class="evidence-item">
-                <img src="images/charter.png" alt="True Crime Toastmasters Official Charter Document">
-                <div class="evidence-details">
-                    <h3>Exhibit C: The Official Charter</h3>
-                    <p>The signed charter document, bearing the names of our founding members. Your legacy awaits.</p>
-                </div>
-            </div>
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+<li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
+<li class="nav__item"><a class="nav__link" href="meetings.html">Meetings</a></li>
+<li class="nav__item"><a class="nav__link" href="case-files.html">Club Experience</a></li>
+<li class="nav__item"><a class="nav__link" href="join.html">Join</a></li>
+<li class="nav__item"><a class="nav__link" href="resources.html">Resources</a></li>
+<li class="nav__item"><a class="nav__link is-active" href="gallery.html">Gallery</a></li>
+<li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <div class="evidence-item">
-                <img src="images/clubmeeting.png" alt="Online Meeting Screenshot">
-                <div class="evidence-details">
-                    <h3>Exhibit D: Global Connection</h3>
-                    <p>Screenshot from a virtual meeting, connecting detectives worldwide.</p>
-                </div>
-            </div>
-            
-            <div class="evidence-item">
-                <img src="images/MattVillillaDetective.png" alt="Matthew Villella as a Detective Chief Inspector">
-                <div class="evidence-details">
-                    <h3>Exhibit E: Detective on the Case</h3>
-                    <p>Matthew Villilla, DTM, investigating the scene. A seasoned Toastmaster bringing expertise and leadership to our ranks.</p>
-                </div>
-            </div>
+  <main id="main" tabindex="-1">
+    
+<section class="section">
+  <div class="wrap">
+    <h1>Gallery</h1>
+    <p class="help">We’ll add real photos as the club grows. For now, here are brand-safe placeholders.</p>
 
-            <div class="evidence-item">
-                <img src="images/AnnaGaichasDetective.png" alt="Anna Gaichas as a Crime Scene Detective">
-                <div class="evidence-details">
-                    <h3>Exhibit F: Forensic Investigator</h3>
-                    <p>Anna Gaichas, DTM, utilizing keen observation skills to uncover the truth and drive excellence in our District.</p>
-                </div>
-            </div>
-
-            <div class="evidence-item">
-                <img src="images/TMCS.jpg" alt="Online Meeting Screenshot">
-                <div class="evidence-details">
-                    <h3>Exhibit G: Crime Scene</h3>
-                    <p>Screenshot from a virtual meeting, connecting detectives worldwide.</p>
-                </div>
-            </div>
+    <div class="grid grid--3" style="margin-top:18px;">
+      
+        <div class="card">
+          <div class="card__media"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80" alt="Supportive meeting moments" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title" style="margin:0;">Supportive meeting moments</h3>
+            <p class="card__meta" style="margin-top:6px;">People-centered imagery placeholder (replace with club photos when available).</p>
+          </div>
         </div>
-            
-        <div style="text-align: center; margin-top: 50px;">
-            <p style="font-style: italic; color: #888;">"Every picture tells a story. What evidence will you contribute?"</p>
-            <a href="join.html" class="btn btn-primary" style="margin-top: 20px;">Join the Investigation & Be Photographed</a>
+        <div class="card">
+          <div class="card__media"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80" alt="Prepared speaking practice" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title" style="margin:0;">Prepared speaking practice</h3>
+            <p class="card__meta" style="margin-top:6px;">People-centered imagery placeholder (replace with club photos when available).</p>
+          </div>
         </div>
-    </section>
+        <div class="card">
+          <div class="card__media"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80" alt="Teamwork and leadership" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title" style="margin:0;">Teamwork and leadership</h3>
+            <p class="card__meta" style="margin-top:6px;">People-centered imagery placeholder (replace with club photos when available).</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__media"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80" alt="Listening and feedback" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title" style="margin:0;">Listening and feedback</h3>
+            <p class="card__meta" style="margin-top:6px;">People-centered imagery placeholder (replace with club photos when available).</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__media"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=80" alt="Welcome for guests" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title" style="margin:0;">Welcome for guests</h3>
+            <p class="card__meta" style="margin-top:6px;">People-centered imagery placeholder (replace with club photos when available).</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__media"><img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&w=1400&q=80" alt="Hybrid connection" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title" style="margin:0;">Hybrid connection</h3>
+            <p class="card__meta" style="margin-top:6px;">People-centered imagery placeholder (replace with club photos when available).</p>
+          </div>
+        </div>
+    </div>
 
-    <div class="crime-tape"></div>
-    <footer>
-        <p><strong>True Crime Toastmasters Club</strong> • St. Paul, MN • Founded by Jennifer</p>
-        <p>© 2026</p>
-    </footer>
+    <div class="notice" style="margin-top:18px;">
+      <p><strong>Photo note:</strong> When adding member photos, use images that show engaged adults in meeting environments, with a warm professional feel.</p>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap footer__inner">
+      <div class="footer__top">
+        <img class="footer__logo" src="https://www.toastmasters.org/-/media/images/logos/toastmasters-logo-full-color.png" alt="Toastmasters International logo" width="220" height="60" loading="lazy" />
+        <div class="footer__club">
+          <strong>True Crime Toastmasters</strong><br />
+          Minneapolis, Minnesota • Hybrid (Nokomis Community Center + Zoom)
+        </div>
+      </div>
+
+      <div class="footer__legal">
+        <p class="footer__slogan">Where Leaders Are Made</p>
+        <p class="footer__disclaimer">The information on this website is for the sole use of Toastmasters’ members, for Toastmasters business only. It is not to be used for solicitation and distribution of non-Toastmasters material or information.</p>
+        <p class="footer__copyright">© 2026 True Crime Toastmasters</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Accessible mobile nav toggle (no dependencies)
+    const btn = document.querySelector('.nav__toggle');
+    const nav = document.getElementById('primary-nav');
+    if (btn && nav) {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('is-open');
+      });
+    }
+  </script>
 </body>
-
 </html>
-
-

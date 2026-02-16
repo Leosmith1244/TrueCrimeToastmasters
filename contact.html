@@ -1,53 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | True Crime Toastmasters</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | True Crime Toastmasters</title>
+  <meta name="description" content="Contact True Crime Toastmasters to request a guest pass, ask about meetings, or learn about membership and Pathways." />
+  <meta name="keywords" content="Toastmasters, public speaking Minneapolis, communication skills, leadership development, hybrid Toastmasters, Pathways" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Contact | True Crime Toastmasters" />
+  <meta property="og:description" content="Contact True Crime Toastmasters to request a guest pass, ask about meetings, or learn about membership and Pathways." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="crime-tape"></div>
-    <header>
-        <nav>
-            <div class="logo">TRUE CRIME TOASTMASTERS</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="meetings.html">Meetings</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <section class="container" style="max-width: 600px;">
-    <h1>Contact the Club</h1>
-    <p>Questions about the location? Want to interview Jennifer? Send a secure transmission.</p>
-    <br>
+  <header class="site-header" role="banner">
+    <div class="wrap header__inner">
+      <a class="brand" href="index.html" aria-label="True Crime Toastmasters home">
+        <img class="brand__logo" src="https://www.toastmasters.org/-/media/images/logos/toastmasters-logo-full-color.png" alt="Toastmasters International logo" width="220" height="60" loading="eager" />
+        <span class="brand__club">True Crime Toastmasters</span>
+        <span class="brand__tag">Minneapolis • Hybrid</span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span aria-hidden="true">Menu</span>
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+<li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
+<li class="nav__item"><a class="nav__link" href="meetings.html">Meetings</a></li>
+<li class="nav__item"><a class="nav__link" href="case-files.html">Club Experience</a></li>
+<li class="nav__item"><a class="nav__link" href="join.html">Join</a></li>
+<li class="nav__item"><a class="nav__link" href="resources.html">Resources</a></li>
+<li class="nav__item"><a class="nav__link" href="gallery.html">Gallery</a></li>
+<li class="nav__item"><a class="nav__link is-active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
     
-    <form name="contact" method="POST" data-netlify="true" action="/success.html" data-netlify-honeypot="bot-field">
-        
-        <input type="hidden" name="form-name" value="contact">
-        <input type="hidden" name="bot-field"> <label>Name</label>
-        <input type="text" name="name" required>
-        
-        <label>Email</label>
-        <input type="email" name="email" required>
-        
-        <label>Subject (Briefly state the nature of your inquiry)</label>
-        <input type="text" name="subject">
+<section class="section">
+  <div class="wrap" style="max-width:760px;">
+    <h1>Contact</h1>
+    <p>Questions about meetings, Zoom access, or membership? Send a note—our team will reply soon.</p>
 
-        <label>Message</label>
-        <textarea name="message" rows="5"></textarea>
-        
-        <button type="submit" class="btn">Send Message</button>
-    </form>
+    <div class="card" style="margin-top:16px;">
+      <div class="card__body">
+        <form class="form" name="contact" method="POST" data-netlify="true" action="/success.html" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <input type="hidden" name="bot-field">
+
+          <label for="c-name">Name</label>
+          <input id="c-name" type="text" name="name" required>
+
+          <label for="c-email">Email</label>
+          <input id="c-email" type="email" name="email" required>
+
+          <label for="c-subject">Subject</label>
+          <input id="c-subject" type="text" name="subject" placeholder="Guest pass, Pathways, membership, etc.">
+
+          <label for="c-message">Message</label>
+          <textarea id="c-message" name="message" rows="6" placeholder="How can we help?"></textarea>
+
+          <button type="submit" class="btn btn--primary">Send message</button>
+          <p class="help">For guest requests, include whether you plan to attend in person or on Zoom.</p>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
 
-    <div class="crime-tape"></div>
-    <footer>
-        <p><strong>True Crime Toastmasters Club</strong> • St. Paul, MN • Founded by Jennifer</p>
-        <p>© 2025</p>
-    </footer>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap footer__inner">
+      <div class="footer__top">
+        <img class="footer__logo" src="https://www.toastmasters.org/-/media/images/logos/toastmasters-logo-full-color.png" alt="Toastmasters International logo" width="220" height="60" loading="lazy" />
+        <div class="footer__club">
+          <strong>True Crime Toastmasters</strong><br />
+          Minneapolis, Minnesota • Hybrid (Nokomis Community Center + Zoom)
+        </div>
+      </div>
+
+      <div class="footer__legal">
+        <p class="footer__slogan">Where Leaders Are Made</p>
+        <p class="footer__disclaimer">The information on this website is for the sole use of Toastmasters’ members, for Toastmasters business only. It is not to be used for solicitation and distribution of non-Toastmasters material or information.</p>
+        <p class="footer__copyright">© 2026 True Crime Toastmasters</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Accessible mobile nav toggle (no dependencies)
+    const btn = document.querySelector('.nav__toggle');
+    const nav = document.getElementById('primary-nav');
+    if (btn && nav) {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('is-open');
+      });
+    }
+  </script>
 </body>
 </html>

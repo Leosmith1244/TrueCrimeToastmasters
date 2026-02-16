@@ -1,32 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Success | True Crime Toastmasters</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .success-message {
-            text-align: center;
-            padding: 100px 20px;
-            background: #1a1a1a;
-            border: 2px solid var(--tm-yellow);
-            margin-top: 50px;
-        }
-        .success-message h1 {
-            color: var(--tm-yellow);
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Success | True Crime Toastmasters</title>
+  <meta name="description" content="Submission received—True Crime Toastmasters will follow up soon." />
+  <meta name="keywords" content="Toastmasters, public speaking Minneapolis, communication skills, leadership development, hybrid Toastmasters, Pathways" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Success | True Crime Toastmasters" />
+  <meta property="og:description" content="Submission received—True Crime Toastmasters will follow up soon." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="container">
-        <div class="success-message">
-            <h1>Case Closed: Submission Received!</h1>
-            <p>Thank you for submitting your details. Your application for **True Crime Toastmasters** has been filed and will be reviewed by the Club President, Jennifer.</p>
-            <p style="margin-top: 20px;">We will contact you shortly regarding the next steps to becoming a Charter Member.</p>
-            <a href="index.html" class="btn btn-primary" style="margin-top: 30px;">Return to Home</a>
-        </div>
-    </section>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    </body>
+  <header class="site-header" role="banner">
+    <div class="wrap header__inner">
+      <a class="brand" href="index.html" aria-label="True Crime Toastmasters home">
+        <img class="brand__logo" src="https://www.toastmasters.org/-/media/images/logos/toastmasters-logo-full-color.png" alt="Toastmasters International logo" width="220" height="60" loading="eager" />
+        <span class="brand__club">True Crime Toastmasters</span>
+        <span class="brand__tag">Minneapolis • Hybrid</span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span aria-hidden="true">Menu</span>
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link is-active" href="index.html">Home</a></li>
+<li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
+<li class="nav__item"><a class="nav__link" href="meetings.html">Meetings</a></li>
+<li class="nav__item"><a class="nav__link" href="case-files.html">Club Experience</a></li>
+<li class="nav__item"><a class="nav__link" href="join.html">Join</a></li>
+<li class="nav__item"><a class="nav__link" href="resources.html">Resources</a></li>
+<li class="nav__item"><a class="nav__link" href="gallery.html">Gallery</a></li>
+<li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    
+<section class="section">
+  <div class="wrap" style="max-width:800px;">
+    <div class="card">
+      <div class="card__body" style="text-align:center; padding:40px 18px;">
+        <h1 style="margin-bottom:10px;">Thanks—message received!</h1>
+        <p>We’ve received your submission and will follow up soon.</p>
+        <div class="cta" style="justify-content:center; margin-top:14px;">
+          <a class="btn btn--primary" href="meetings.html">Meeting details</a>
+          <a class="btn" href="index.html">Return home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap footer__inner">
+      <div class="footer__top">
+        <img class="footer__logo" src="https://www.toastmasters.org/-/media/images/logos/toastmasters-logo-full-color.png" alt="Toastmasters International logo" width="220" height="60" loading="lazy" />
+        <div class="footer__club">
+          <strong>True Crime Toastmasters</strong><br />
+          Minneapolis, Minnesota • Hybrid (Nokomis Community Center + Zoom)
+        </div>
+      </div>
+
+      <div class="footer__legal">
+        <p class="footer__slogan">Where Leaders Are Made</p>
+        <p class="footer__disclaimer">The information on this website is for the sole use of Toastmasters’ members, for Toastmasters business only. It is not to be used for solicitation and distribution of non-Toastmasters material or information.</p>
+        <p class="footer__copyright">© 2026 True Crime Toastmasters</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Accessible mobile nav toggle (no dependencies)
+    const btn = document.querySelector('.nav__toggle');
+    const nav = document.getElementById('primary-nav');
+    if (btn && nav) {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('is-open');
+      });
+    }
+  </script>
+</body>
 </html>

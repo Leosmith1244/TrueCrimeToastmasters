@@ -1,25 +1,21 @@
-# True Crime Toastmasters Website
+# True Crime Toastmasters Website (Brand-Safe Refresh)
 
-This is the official static website for the True Crime Toastmasters Club (St. Paul, MN).
-Founded by Jennifer.
+This folder contains an updated, brand-compliant, WCAG-friendly static website for **True Crime Toastmasters** (Hybrid • Minneapolis, MN).
 
-## Project Structure
-- **/css/styles.css**: Contains the base Toastmasters theme + True Crime Overrides (Dark Mode).
-- **/*.html**: Static pages (Home, About, Meetings, Case Files, Join).
-- **Images**: Sourced via Unsplash direct URLs (no local assets required for initial deploy).
+## What changed
+- Removed “criminal/jargon” UI patterns and replaced with a warm, investigative/analytical theme.
+- Updated CSS to official Toastmasters colors and approved typography (Montserrat + Source Sans 3).
+- Added official Toastmasters logo placeholder and **mandatory footer disclaimer** to every page.
+- Improved accessibility: skip link, focus styles, semantic layout, responsive navigation.
 
-## How to Deploy to Netlify
+## Structure
+- `/css/styles.css` — brand-safe theme (single source of truth)
+- `index.html, about.html, meetings.html, join.html, case-files.html, resources.html, gallery.html, contact.html, success.html`
 
-1. **GitHub**: Upload these files to a new GitHub Repository.
-2. **Netlify**:
-   - Log in to Netlify.
-   - Click "Add new site" -> "Import from an existing project".
-   - Select GitHub and choose this repository.
-   - **Build Settings**: Leave blank (this is a static site).
-   - Click **Deploy Site**.
+## Deploy
+Upload the contents of this folder to your static host (e.g., Netlify). No build step required.
 
-## Forms
-The `join.html` and `contact.html` forms include `data-netlify="true"`. Netlify will automatically detect these forms and start collecting submissions in your Netlify dashboard under the "Forms" tab.
+## Update before publishing
+- Replace the Zoom placeholder link on `meetings.html` with your real Zoom/registration link.
+- Replace placeholder Unsplash images with licensed images if desired.
 
-## Customization
-To change the meeting date, edit the JavaScript countdown in `index.html` and the table in `meetings.html`.

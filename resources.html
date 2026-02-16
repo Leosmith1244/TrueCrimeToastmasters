@@ -1,149 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources | True Crime Toastmasters</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        /* Resources Specific Styles */
-        .toolkit-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .tool-item {
-            background-color: #1a1a1a;
-            border: 1px solid var(--tm-maroon); /* Red border for urgency */
-            padding: 25px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .tool-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 10px;
-            background: repeating-linear-gradient(
-                90deg,
-                var(--tm-yellow),
-                var(--tm-yellow) 5px,
-                transparent 5px,
-                transparent 10px
-            ); /* Dashed caution tape */
-        }
-
-        .tool-item h3 {
-            font-family: var(--font-head);
-            color: var(--tm-yellow);
-            margin-bottom: 10px;
-            font-size: 1.3rem;
-            text-transform: uppercase;
-        }
-
-        .tool-item p {
-            font-size: 0.95rem;
-            color: #ccc;
-            margin-bottom: 15px;
-        }
-
-        .tool-item .btn {
-            background-color: var(--tm-maroon);
-            border-color: var(--tm-maroon);
-            color: white;
-            font-size: 0.9rem;
-            padding: 8px 15px;
-            margin: 0;
-        }
-
-        .tool-item .btn:hover {
-            background-color: #500000;
-            border-color: #500000;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resources | True Crime Toastmasters</title>
+  <meta name="description" content="Member resources for Pathways, evaluations, and meeting roles at True Crime Toastmasters in Minneapolis." />
+  <meta name="keywords" content="Toastmasters, public speaking Minneapolis, communication skills, leadership development, hybrid Toastmasters, Pathways" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Resources | True Crime Toastmasters" />
+  <meta property="og:description" content="Member resources for Pathways, evaluations, and meeting roles at True Crime Toastmasters in Minneapolis." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="crime-tape"></div>
-    <header>
-        <nav>
-            <div class="logo">TRUE CRIME TOASTMASTERS</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="meetings.html">Meetings</a></li>
-                <li><a href="case-files.html">Case Files</a></li>
-                <li><a href="join.html" style="color:var(--tm-yellow);">Join Now</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="resources.html" class="active">Resources</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <section class="container">
-        <h1>The Investigator's Toolkit</h1>
-        <p>Arm yourself with essential resources for crafting compelling speeches, enhancing your leadership skills, and diving deeper into the world of true crime.</p>
-        
-        
-        <div class="toolkit-grid">
-            <div class="tool-item">
-                <h3>The Psychology of Passion</h3>
-                <p>A short reading list and prompt pack exploring motive, emotion, and persuasion — curated for February’s <em>Crimes of Passion</em> theme. Available to members and February guests.</p>
-                <a href="#" class="btn">Open File (Coming Soon)</a>
-            </div>
+  <header class="site-header" role="banner">
+    <div class="wrap header__inner">
+      <a class="brand" href="index.html" aria-label="True Crime Toastmasters home">
+        <img class="brand__logo" src="https://www.toastmasters.org/-/media/images/logos/toastmasters-logo-full-color.png" alt="Toastmasters International logo" width="220" height="60" loading="eager" />
+        <span class="brand__club">True Crime Toastmasters</span>
+        <span class="brand__tag">Minneapolis • Hybrid</span>
+      </a>
 
-            <div class="tool-item">
-                <h3>The Prompt Dossier</h3>
-                <p>A collection of true crime-themed speech prompts, topics, and rhetorical challenges to spark your investigative spirit and captivate your audience.</p>
-                <a href="assets/true-crime-speech-prompts.pdf" class="btn" download>Download Prompts (PDF)</a>
-            </div>
+      <button class="nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span aria-hidden="true">Menu</span>
+      </button>
 
-            <div class="tool-item">
-                <h3>Toastmasters Intl. Manual</h3>
-                <p>Access the official Toastmasters International website for Pathways learning experiences, educational materials, and member benefits.</p>
-                <a href="https://www.toastmasters.org/" target="_blank" class="btn">Visit HQ</a>
-            </div>
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+<li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
+<li class="nav__item"><a class="nav__link" href="meetings.html">Meetings</a></li>
+<li class="nav__item"><a class="nav__link" href="case-files.html">Club Experience</a></li>
+<li class="nav__item"><a class="nav__link" href="join.html">Join</a></li>
+<li class="nav__item"><a class="nav__link is-active" href="resources.html">Resources</a></li>
+<li class="nav__item"><a class="nav__link" href="gallery.html">Gallery</a></li>
+<li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <div class="tool-item">
-                <h3>The Eloquence Brief</h3>
-                <p>Expert tips and strategies for delivering impactful speeches, honing your vocal variety, and mastering body language – crucial for any closing argument.</p>
-                <a href="#" class="btn">Read the Brief (Coming Soon)</a>
-            </div>
+  <main id="main" tabindex="-1">
+    
+<section class="section">
+  <div class="wrap">
+    <h1>Resources</h1>
+    <p>Tools to support speeches, evaluations, leadership, and the Pathways learning experience.</p>
 
-            <div class="tool-item">
-                <h3>Evidence Sources</h3>
-                <p>A curated list of reputable true crime databases, podcasts, documentaries, and academic journals to fuel your research and presentations.</p>
-                <a href="#" class="btn">Consult Sources (Coming Soon)</a>
-            </div>
-
-            <div class="tool-item">
-                <h3>The Role Play Handbook</h3>
-                <p>Understand the various meeting roles, from "Forensic Timer" to "Crime Scene Grammarian," and how each contributes to a successful session.</p>
-                <a href="#" class="btn">View Roles (Coming Soon)</a>
-            </div>
-
-            <div class="tool-item">
-                <h3>Command & Control Guide</h3>
-                <p>Resources for club officers to effectively lead, manage, and grow our specialty club, ensuring its ongoing success.</p>
-                <a href="#" class="btn">Access Leadership Info (Coming Soon)</a>
-            </div>
+    <div class="grid grid--3" style="margin-top:18px;">
+      <div class="card">
+        <div class="card__body">
+          <div class="card__kicker">Pathways</div>
+          <h2 class="card__title">Learning projects</h2>
+          <p class="card__meta">Step-by-step projects that build confidence, clarity, and leadership.</p>
+          <a class="btn" href="https://www.toastmasters.org/" target="_blank" rel="noopener">Visit Toastmasters.org</a>
         </div>
+      </div>
 
-        <div style="text-align: center; margin-top: 50px;">
-            <p style="font-style: italic; color: #888;">"Knowledge is the first step toward justice."</p>
-            <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;">Suggest a New Tool for the Kit</a>
+      <div class="card">
+        <div class="card__body">
+          <div class="card__kicker">Evaluations</div>
+          <h2 class="card__title">Helpful frameworks</h2>
+          <p class="card__meta">Simple evaluation structure: what worked, what could be even better, and one next step.</p>
+          <a class="btn" href="#" aria-disabled="true">Template (coming soon)</a>
         </div>
-    </section>
+      </div>
 
-    <div class="crime-tape"></div>
-    <footer>
-        <p><strong>True Crime Toastmasters Club</strong> • St. Paul, MN • Founded by Jennifer</p>
-        <p>© 2026</p>
-    </footer>
+      <div class="card">
+        <div class="card__body">
+          <div class="card__kicker">Meeting roles</div>
+          <h2 class="card__title">Role guides</h2>
+          <p class="card__meta">Understand the roles that keep meetings running smoothly—and build leadership fast.</p>
+          <a class="btn" href="#" aria-disabled="true">Role one-pagers (coming soon)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="notice" style="margin-top:20px;">
+      <p><strong>Tip:</strong> If you’re new, start by visiting as a guest and asking about Pathways. We’ll help you choose a path that fits your goals.</p>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap footer__inner">
+      <div class="footer__top">
+        <img class="footer__logo" src="https://www.toastmasters.org/-/media/images/logos/toastmasters-logo-full-color.png" alt="Toastmasters International logo" width="220" height="60" loading="lazy" />
+        <div class="footer__club">
+          <strong>True Crime Toastmasters</strong><br />
+          Minneapolis, Minnesota • Hybrid (Nokomis Community Center + Zoom)
+        </div>
+      </div>
+
+      <div class="footer__legal">
+        <p class="footer__slogan">Where Leaders Are Made</p>
+        <p class="footer__disclaimer">The information on this website is for the sole use of Toastmasters’ members, for Toastmasters business only. It is not to be used for solicitation and distribution of non-Toastmasters material or information.</p>
+        <p class="footer__copyright">© 2026 True Crime Toastmasters</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Accessible mobile nav toggle (no dependencies)
+    const btn = document.querySelector('.nav__toggle');
+    const nav = document.getElementById('primary-nav');
+    if (btn && nav) {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('is-open');
+      });
+    }
+  </script>
 </body>
 </html>
