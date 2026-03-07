@@ -1,21 +1,13 @@
-# True Crime Toastmasters Website (Brand-Safe Refresh)
+# True Crime Toastmasters site refresh
 
-This folder contains an updated, brand-compliant, WCAG-friendly static website for **True Crime Toastmasters** (Hybrid • Minneapolis, MN).
-
-## What changed
-- Removed “criminal/jargon” UI patterns and replaced with a warm, investigative/analytical theme.
-- Updated CSS to official Toastmasters colors and approved typography (Montserrat + Source Sans 3).
-- Added official Toastmasters logo placeholder and **mandatory footer disclaimer** to every page.
-- Improved accessibility: skip link, focus styles, semantic layout, responsive navigation.
+Updated static website package with a high-impact homepage, April 2 open house details, refreshed page copy, improved visual hierarchy, and a local Toastmasters logo asset.
 
 ## Structure
-- `/css/styles.css` — brand-safe theme (single source of truth)
-- `index.html, about.html, meetings.html, join.html, case-files.html, resources.html, gallery.html, contact.html, success.html`
+- `index.html` — attention-grabbing launch page
+- `meetings.html` — open house plan and details
+- `about.html`, `case-files.html`, `join.html`, `resources.html`, `gallery.html`, `contact.html`, `success.html`
+- `css/styles.css` — shared styles
+- `assets/images/toastmasters-logo.png` — local logo asset
 
-## Deploy
-Upload the contents of this folder to your static host (e.g., Netlify). No build step required.
-
-## Update before publishing
-- Replace the Zoom placeholder link on `meetings.html` with your real Zoom/registration link.
-- Replace placeholder Unsplash images with licensed images if desired.
-
+## Publish
+Upload the entire folder to your static host. No build step required.
