@@ -262,3 +262,59 @@ input, select, textarea {
   .event-card__date, .agenda__item { grid-template-columns: 1fr; }
   .gallery-tile--wide, .gallery-tile--tall { grid-column: span 12; }
 }
+.hero-headline {
+  color: #ffffff;
+  text-shadow:
+    0 2px 10px rgba(0,0,0,.45),
+    0 6px 24px rgba(0,0,0,.35);
+}
+
+.hero-headline .hero__title-accent {
+  color: var(--tm-happy-yellow);
+}
+
+/* Unsolved Mysteries homepage upgrade */
+.mystery-home {
+  background:
+    radial-gradient(circle at 12% 10%, rgba(242,223,116,.12), transparent 18%),
+    radial-gradient(circle at 86% 18%, rgba(119,36,50,.13), transparent 22%),
+    linear-gradient(180deg, #071421 0%, #f7fafc 42%, #ffffff 100%);
+}
+.mystery-topbar { background: linear-gradient(90deg, #170a12, var(--tm-true-maroon), #0a2840); }
+.mystery-header { background: rgba(255,255,255,.93); }
+.mystery-hero {
+  background:
+    linear-gradient(115deg, rgba(4,13,23,.96), rgba(0,65,101,.88) 48%, rgba(119,36,50,.86)),
+    url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80') center/cover;
+}
+.mystery-hero::after {
+  content:""; position:absolute; inset:0; pointer-events:none; opacity:.33;
+  background-image: linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: linear-gradient(180deg, rgba(0,0,0,.9), rgba(0,0,0,.2));
+}
+.mystery-hero__inner { position:relative; z-index:1; display:grid; grid-template-columns: 1.08fr .92fr; gap:34px; align-items:center; padding:88px 0 82px; }
+.case-stamp { color: var(--tm-happy-yellow); font-family: var(--font-head); font-weight:800; letter-spacing:.15em; margin:18px 0 8px; }
+.mystery-hero h1 { color:#fff; text-shadow:0 18px 44px rgba(0,0,0,.32); }
+.mystery-note { color: rgba(255,255,255,.86); margin-top:16px; }
+.mystery-dossier { background: rgba(5,16,27,.72); backdrop-filter: blur(10px); border-color: rgba(242,223,116,.22); }
+.mystery-date-box { box-shadow: 0 0 0 1px rgba(242,223,116,.45), 0 18px 38px rgba(0,0,0,.28); }
+.evidence-list { border-top:1px solid rgba(255,255,255,.16); border-bottom:1px solid rgba(255,255,255,.16); padding:14px 0; margin:16px 0; }
+.light-eyebrow { background:rgba(0,65,101,.08); color:var(--tm-loyal-blue); border-color:rgba(0,65,101,.1); }
+.evidence-card { transform: rotate(-1.1deg); border: 2px solid rgba(242,223,116,.8); background: #fffdf0; }
+.grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.case-number { color: var(--tm-true-maroon); font-family: var(--font-head); font-weight:800; letter-spacing:.14em; margin-bottom:10px; }
+.mystery-steps .card { position:relative; }
+.mystery-steps .card::before { content:""; position:absolute; top:0; left:18px; right:18px; height:4px; background:var(--tm-happy-yellow); border-radius:0 0 999px 999px; }
+.mystery-dark-panel { background: linear-gradient(145deg, #071421, #0a2840 58%, #351522); color:#fff; }
+.mystery-dark-panel h2, .mystery-dark-panel p, .mystery-dark-panel li { color:#fff; }
+.mystery-list li { margin-bottom:12px; }
+.mystery-board { min-height:360px; border-radius:28px; position:relative; overflow:hidden; background: radial-gradient(circle at center, rgba(242,223,116,.12), transparent 35%), #101821; border:1px solid rgba(255,255,255,.18); box-shadow:0 24px 65px rgba(0,0,0,.35); }
+.pin { position:absolute; display:grid; place-items:center; width:92px; height:92px; border-radius:50%; background:#fff; color:var(--tm-loyal-blue); font-family:var(--font-head); font-weight:800; box-shadow:0 15px 35px rgba(0,0,0,.34); }
+.pin-a { left:12%; top:15%; } .pin-b { right:16%; top:20%; } .pin-c { left:20%; bottom:18%; } .pin-d { right:12%; bottom:16%; }
+.thread { position:absolute; height:3px; background:rgba(242,223,116,.78); transform-origin:left center; box-shadow:0 0 16px rgba(242,223,116,.42); }
+.thread-1 { left:25%; top:32%; width:46%; transform:rotate(10deg); }
+.thread-2 { left:30%; top:38%; width:35%; transform:rotate(92deg); }
+.thread-3 { left:36%; bottom:34%; width:38%; transform:rotate(-15deg); }
+.board-note { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%) rotate(-2deg); background:#fffdf0; color:#18212b; border-radius:14px; padding:18px 20px; font-family:var(--font-head); font-weight:800; box-shadow:0 18px 34px rgba(0,0,0,.28); max-width:230px; text-align:center; }
+@media (max-width: 900px) { .mystery-hero__inner, .split { grid-template-columns:1fr; } .grid--4, .grid--3, .grid--2 { grid-template-columns:1fr; } .mystery-board { min-height:320px; } }
