@@ -8,6 +8,7 @@
   <meta property="og:title" content="June 4 Case File Recap | True Crime Toastmasters">
   <meta property="og:description" content="Unsolved Mysteries, two prepared speeches, true confessions, tall tales, and a room full of mystery energy.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/Caught%20on%20Camera%20Promo.png">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +25,8 @@
     .recap-photo-grid { display:grid; grid-template-columns: 1.1fr .9fr; gap:22px; align-items:start; }
     .recap-photo { border-radius: 24px; overflow:hidden; box-shadow: var(--shadow); background:#fff; border:1px solid var(--border); }
     .recap-photo img { width:100%; height:auto; display:block; }
+    .recap-photo--fill img { height: 100%; min-height: 270px; object-fit: cover; }
+    .recap-photo--tall img { max-height: 780px; object-fit: contain; background:#f7fafc; }
     .caption { padding:14px 16px; color:var(--ink-soft); font-weight:700; }
     .case-timeline { display:grid; gap:16px; }
     .case-timeline .agenda__item { grid-template-columns: 110px 1fr; }
@@ -32,10 +35,9 @@
     .recap-dark { background:linear-gradient(145deg, #071421, #0a2840 58%, #351522); color:#fff; }
     .recap-dark h2, .recap-dark h3, .recap-dark p, .recap-dark li { color:#fff; }
     .table-topic-card { border-top:5px solid var(--tm-happy-yellow); }
-    .poster-placeholder { min-height:260px; display:grid; place-items:center; padding:28px; text-align:center; background:radial-gradient(circle at 30% 20%, rgba(242,223,116,.18), transparent 28%), linear-gradient(135deg, #071421, #103b5f); color:#fff; }
-    .poster-placeholder strong { font-family:var(--font-head); font-size: clamp(1.6rem, 4vw, 3rem); line-height:1; color:#fff; }
-    .poster-placeholder span { color:var(--tm-happy-yellow); display:block; margin-top:10px; font-weight:800; }
-    @media (max-width: 900px){ .recap-photo-grid { grid-template-columns:1fr; } .case-timeline .agenda__item { grid-template-columns:1fr; } }
+    .evidence-gallery { align-items: stretch; }
+    .photo-callout { margin-top: 22px; }
+    @media (max-width: 900px){ .recap-photo-grid { grid-template-columns:1fr; } .case-timeline .agenda__item { grid-template-columns:1fr; } .recap-photo--fill img { min-height: auto; } }
   </style>
 </head>
 <body>
@@ -87,7 +89,7 @@
     <section class="section">
       <div class="wrap recap-photo-grid">
         <div class="recap-photo">
-          <div class="poster-placeholder"><div><strong>CAUGHT ON CAMERA</strong><span>3 Unsolved Mysteries. One Big Question.</span></div></div>
+          <img src="assets/images/Caught%20on%20Camera%20Promo.png" alt="Caught on Camera promotional graphic for True Crime Toastmasters" loading="lazy">
           <div class="caption">The featured speech explored how cameras can reveal clues without delivering closure.</div>
         </div>
         <div class="quote-card">
@@ -110,18 +112,9 @@
             <li><strong>Relisha Rudd</strong> — missing from a Washington, D.C. shelter since 2014.</li>
           </ul>
         </div>
-        <div class="card">
-          <div class="card__body">
-            <div class="card__kicker">Evaluation findings</div>
-            <h3 class="card__title">What worked</h3>
-            <ul class="list">
-              <li>Dramatic pacing that fit the true-crime tone.</li>
-              <li>A clear rule-of-three structure.</li>
-              <li>Repeated victim names for emphasis and humanity.</li>
-              <li>A manila folder prop that made the “case file” feel tangible.</li>
-              <li>A strong central idea: surveillance can capture clues without solving the mystery.</li>
-            </ul>
-          </div>
+        <div class="recap-photo">
+          <img src="assets/images/TCTM1.PNG" alt="Unsolved Mysteries Facebook promotional graphic for True Crime Toastmasters" loading="lazy">
+          <div class="caption">The public-facing promo framed the meeting as suspenseful, creative, and guest-friendly.</div>
         </div>
       </div>
     </section>
@@ -136,8 +129,8 @@
             <p>The speech connected practical services with a bigger human question: what does it take to rebuild a life with structure, dignity, healing, and accountability?</p>
           </div>
         </div>
-        <div class="recap-photo">
-          <div class="poster-placeholder"><div><strong>YAYA’S REENTRY CENTER</strong><span>Structure. Dignity. Healing. Accountability.</span></div></div>
+        <div class="recap-photo recap-photo--tall">
+          <img src="assets/images/Yayas%20reentry.png" alt="Yaya’s Reentry Center information graphic" loading="lazy">
           <div class="caption">A visual summary of the reentry support program discussed in Hassan’s speech.</div>
         </div>
       </div>
@@ -168,10 +161,10 @@
           <h2>Moments from the case room</h2>
           <p class="lead" style="margin:0 auto;">The June 4 meeting had the right mix: serious speeches, visual atmosphere, guest energy, and playful improvisation.</p>
         </div>
-        <div class="grid grid--3">
-          <div class="recap-photo"><div class="poster-placeholder"><div><strong>ZOOM CASE ROOM</strong><span>Members, guests, and mystery backgrounds.</span></div></div><div class="caption">A meeting snapshot with Stephen, Leo, Jen, Courtney, Anna, and Alicia.</div></div>
-          <div class="recap-photo"><div class="poster-placeholder"><div><strong>UNSOLVED MYSTERIES</strong><span>Speak. Listen. Solve.</span></div></div><div class="caption">The Facebook promo captured the club’s public-facing invitation.</div></div>
-          <div class="recap-photo"><div class="poster-placeholder"><div><strong>CAUGHT ON CAMERA</strong><span>Storytelling with clues, tension, and care.</span></div></div><div class="caption">The speaker graphic framed the speech as a respectful true-crime case file.</div></div>
+        <div class="grid grid--3 evidence-gallery">
+          <div class="recap-photo recap-photo--fill"><img src="assets/images/TCTM%20SNIPSOT%20JUNE%204.jpg" alt="Zoom meeting snapshot from the June 4 True Crime Toastmasters meeting" loading="lazy"><div class="caption">A meeting snapshot with Stephen, Leo, Jen, Courtney, Anna, and Alicia.</div></div>
+          <div class="recap-photo"><img src="assets/images/TCTM1.PNG" alt="Unsolved Mysteries Facebook post graphic" loading="lazy"><div class="caption">The Facebook promo captured the club’s public-facing invitation.</div></div>
+          <div class="recap-photo"><img src="assets/images/Caught%20on%20Camera%20Promo.png" alt="Caught on Camera speaker graphic for Leo Smith" loading="lazy"><div class="caption">The speaker graphic framed the speech as a respectful true-crime case file.</div></div>
         </div>
       </div>
     </section>
